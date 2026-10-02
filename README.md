@@ -327,3 +327,12 @@ MIT License - Feel free to use this project for your own purposes.
 ## Support
 
 - Docs: [Next.js](https://nextjs.org/) | [React Three Fiber](https://docs.pmnd.rs/) | [Tailwind CSS](https://tailwindcss.com/)
+---
+
+## Static deployment note
+
+This repo is deployed as a **static export** (`output: "export"` in `next.config.mjs`) to Cloudflare Pages — no API routes, no server actions, so it prerenders fully at build time. Install with npm (`npm install --legacy-peer-deps`); the stale `pnpm-lock.yaml` was removed in favour of `package-lock.json`. Next.js is pinned at **15.2.8** (the patched 15.2.x line — see the React2Shell CVE-2025-55182 advisory).
+
+---
+
+Built by [Girish Lade](https://ladestack.in) — part of the [LadeStack](https://ladestack.in) free-tools collection.
